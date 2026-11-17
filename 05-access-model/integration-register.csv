@@ -1,0 +1,4 @@
+integration,type,owner,permissions,scope,data_exposed,token_rotation,last_access_review,kill_switch
+Reporting platform feed,API,GRC Platform Admin,Read-only,Risks; issues; exceptions,Titles; ratings; dates; owners (role names),Every 90 days,2026-10-01,Disable service account
+AI summarization assistant,API / AI tool,GRC Platform Admin,Read-only,Risks; issues,Titles; ratings; status; no personal data,Every 90 days,2026-10-01,Disable service account and revoke token
+Ticketing sync,API,IT Ops Manager,Read and create issues,Issues only,Issue titles; owners; due dates,Every 90 days,2026-10-01,Disable service account

@@ -1,0 +1,26 @@
+issue_id,risk_id,title,owner,severity,status,opened,due_date,closed_date
+ISS-001,R-004,Enable MFA on legacy admin console,IAM Lead,High,In Progress,2026-09-18,2026-10-18,
+ISS-002,R-022,Add input validation to customer portal forms,Head of Engineering,Critical,In Progress,2026-11-07,2026-11-22,
+ISS-003,R-019,Remove unused admin roles in production cloud,Cloud Security Lead,High,In Progress,2026-10-28,2026-11-27,
+ISS-004,R-021,Rotate and purge leaked secrets,Head of Engineering,Critical,Closed,2026-10-08,2026-10-23,2026-10-18
+ISS-005,R-003,Migrate reporting server to a supported OS,Head of Infrastructure,High,Open,2026-09-03,2026-10-03,
+ISS-006,R-018,Run first quarterly backup restore test,Head of Infrastructure,Medium,Open,2026-09-28,2026-12-27,
+ISS-007,R-024,Schedule incident response tabletop exercise,SecOps Lead,Medium,Open,2026-10-18,2027-01-16,
+ISS-008,R-026,Enable configuration drift detection,Cloud Security Lead,Medium,In Progress,2026-10-03,2027-01-01,
+ISS-009,R-028,Complete overdue supplier security reviews,Vendor Risk Manager,Medium,In Progress,2026-08-09,2026-11-07,
+ISS-010,R-009,Deploy endpoint protection to contractor laptops,IT Ops Manager,High,Open,2026-11-05,2026-12-05,
+ISS-011,R-020,Run access recertification for finance systems,Finance Systems Owner,High,Open,2026-08-19,2026-09-18,
+ISS-012,R-011,Extend application log retention to 90 days,SecOps Lead,Medium,Closed,2026-07-30,2026-10-28,2026-11-02
+ISS-013,R-012,Replace self-signed certificates,IT Ops Manager,Low,Open,2026-06-20,2026-12-17,
+ISS-014,R-016,Run phishing simulation campaign,CISO,Medium,Closed,2026-09-08,2026-10-18,2026-10-23
+ISS-015,R-014,Enable session recording for vendor access,Vendor Risk Manager,High,In Progress,2026-10-13,2026-11-12,
+ISS-016,R-002,Replace shared service accounts with managed identities,IAM Lead,Medium,Open,2026-10-23,2027-01-21,
+ISS-017,R-023,Automate API key rotation,Platform Lead,Medium,Open,2026-11-02,2027-01-31,
+ISS-018,R-038,Enable admin audit logging in CRM,SecOps Lead,Medium,In Progress,2026-10-26,2027-01-24,
+ISS-019,R-017,Make file server backups immutable,Head of Infrastructure,High,Open,2026-11-03,2026-12-03,
+ISS-020,R-010,Restrict public bucket and serve assets via CDN,Cloud Security Lead,Medium,Closed,2026-08-14,2026-11-07,2026-10-28
+ISS-021,R-099,Update vendor security questionnaire,Vendor Risk Manager,Low,Open,2026-10-18,2027-04-16,
+ISS-022,,Patch lobby kiosk machines,IT Ops Manager,Medium,Open,2026-10-28,2027-01-26,
+ISS-023,R-036,Patch developer workstations,IT Ops Manager,Medium,Open,2026-11-07,2027-02-05,
+ISS-024,R-005,Add integrity checks to third-party scripts,Head of Engineering,Medium,Open,2026-09-08,2026-12-07,
+ISS-025,R-035,Enforce contractor security training,CISO,Low,Open,2026-07-20,2027-01-16,

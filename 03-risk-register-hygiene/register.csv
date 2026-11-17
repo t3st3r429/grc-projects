@@ -1,0 +1,43 @@
+risk_id,title,category,owner,likelihood,impact,rating,nist_csf,iso27001,status,last_reviewed
+R-001,Legacy TLS versions accepted by partner gateway,Cryptography,Head of Infrastructure,3,4,Medium,PR.DS-02,A.8.24,Open,2026-09-18
+R-002,Shared service accounts used for batch processing,Identity & Access,IAM Lead,4,3,Medium,PR.AA-01,A.5.16,Open,2026-10-03
+R-003,Unsupported OS on reporting server,Vulnerability Management,Head of Infrastructure,3,4,Medium,ID.RA-01,A.8.8,Open,2026-10-18
+R-004,No MFA on legacy admin console,Identity & Access,IAM Lead,4,5,High,PR.AA-03,A.8.5,Open,2026-10-28
+R-005,Third-party scripts loaded without integrity checks,Application Security,Head of Engineering,3,3,Medium,PR.PS-06,A.8.28,Open,2026-08-09
+R-006,Weak password policy on internal wiki,Identity & Access,IT Ops Manager,3,2,Medium,PR.AA-01,A.5.17,Open,2026-05-01
+R-007,Staging database replica not encrypted at rest,Data Protection,Data Engineering Lead,2,4,Medium,PR.DS-01,A.8.24,Open,2026-08-19
+R-008,ERP patching delayed by change freeze,Vulnerability Management,ERP Product Owner,3,4,Medium,ID.RA-01,A.8.8,Open,2026-09-23
+R-009,Contractor laptops without endpoint protection,Endpoint,IT Ops Manager,4,3,Medium,DE.CM-09,A.8.7,Open,2026-11-02
+R-010,Public cloud storage bucket holding marketing assets,Cloud Security,Cloud Security Lead,2,3,Low,PR.DS-01,A.5.23,Open,2026-09-08
+R-011,Application log retention shorter than policy,Logging & Monitoring,SecOps Lead,3,3,Medium,DE.CM-01,A.8.15,Open,2026-07-20
+R-012,Self-signed certificates on internal tools,Cryptography,IT Ops Manager,2,2,Low,PR.DS-02,A.8.24,Closed,2026-06-20
+R-013,Outdated Java runtime in batch processor,Vulnerability Management,Head of Engineering,3,3,Medium,ID.RA-01,A.8.8,Open,2026-10-08
+R-014,Vendor remote access without session recording,Third-Party Risk,Vendor Risk Manager,3,4,Medium,GV.SC-07,A.5.19,Open,2026-10-23
+R-015,SMS-based MFA for support staff,Identity & Access,IAM Lead,3,3,Medium,PR.AA-03,A.8.5,Open,2026-08-29
+R-016,Phishing leads to credential theft,Awareness,CISO,4,4,High,PR.AT-01,A.6.3,Open,2026-10-13
+R-017,Ransomware encrypts file servers,Resilience,Head of Infrastructure,3,5,High,RC.RP-01,A.8.13,Open,2026-09-28
+R-018,Backups not restore-tested,Resilience,Head of Infrastructure,3,4,Medium,PR.DS-11,A.8.13,Open,2026-04-21
+R-019,Excessive privileged access in production cloud,Cloud Security,Cloud Security Lead,4,4,High,PR.AA-05,A.5.18,Open,2026-10-20
+R-020,No formal access recertification for finance systems,Identity & Access,Finance Systems Owner,3,4,Medium,PR.AA-05,A.5.18,Open,2026-01-21
+R-021,Secrets committed to source repositories,Application Security,Head of Engineering,3,4,Medium,PR.PS-06,A.8.28,Open,2026-10-15
+R-022,Unvalidated input in customer portal,Application Security,Head of Engineering,4,4,High,PR.PS-06,A.8.28,Open,2026-10-26
+R-023,API keys without rotation,Application Security,Platform Lead,3,3,Medium,PR.AA-01,A.5.17,Open,2026-08-14
+R-024,Incident response plan not tested in 12 months,Incident Response,SecOps Lead,3,4,Medium,RS.MA-01,A.5.24,Open,2026-03-02
+R-025,Alert fatigue delays detection of critical events,Logging & Monitoring,SecOps Lead,3,4,Medium,DE.AE-02,A.8.16,Open,2026-09-18
+R-026,Cloud misconfiguration drifts from baseline,Cloud Security,Cloud Security Lead,4,3,Medium,PR.PS-01,A.8.9,Open,2026-10-30
+R-027,Payment processor outage affects settlements,Third-Party Risk,Vendor Risk Manager,2,5,Medium,GV.SC-07,A.5.19,Open,2026-09-03
+R-028,Supplier security reviews overdue,Third-Party Risk,Vendor Risk Manager,4,3,Medium,GV.SC-06,A.5.19,Open,2026-07-30
+R-029,Insecure data transfer to analytics vendor,Data Protection,Data Engineering Lead,2,4,Medium,PR.DS-02,A.8.24,Open,2026-08-24
+R-030,Personal data retained beyond policy,Data Protection,Data Protection Officer,3,4,High,PR.DS-01,A.8.10,Open,2026-07-10
+R-031,Unmanaged personal devices access email,Endpoint,IT Ops Manager,3,3,Medium,PR.AA-05,A.8.1,Open,2026-08-14
+R-032,Insufficient segmentation between production and corporate networks,Network Security,Head of Infrastructure,3,4,Medium,PR.IR-01,A.8.22,Open,2026-09-13
+R-033,DDoS against public APIs,Network Security,Platform Lead,3,4,Medium,PR.IR-01,A.8.20,Open,2026-08-04
+R-034,Risk ownership unclear for new products,Governance,CISO,3,2,Low,GV.RM-01,A.5.2,Open,2026-06-30
+R-035,Security training not completed by contractors,Awareness,CISO,4,2,Medium,PR.AT-01,A.6.3,Open,2026-05-31
+R-036,Unpatched developer workstations,Endpoint,IT Ops Manager,3,3,Medium,ID.RA-01,A.8.8,Open,2026-10-10
+R-037,Business continuity plan out of date,Resilience,COO,2,4,Medium,RC.RP-01,A.5.30,Open,2025-12-22
+R-038,No logging of administrator actions in SaaS CRM,Logging & Monitoring,SecOps Lead,3,3,Medium,DE.CM-01,A.8.15,Open,2026-09-30
+R-039,No multi-factor authentication on legacy admin console,Identity & Access,IAM Lead,4,5,High,PR.AA-03,A.8.5,Open,2026-10-28
+R-040,Log retention on application tier below policy,Logging & Monitoring,SecOps Lead,3,3,Medium,DE.CM-01,A.8.15,Open,2026-07-20
+R-041,Shadow IT tools adopted without review,Governance,,3,3,Medium,GV.RM-01,A.5.9,Open,2026-09-28
+R-042,Customer data exported to spreadsheets,Data Protection,Data Engineering Lead,3,4,Medium,,,Open,2026-09-18

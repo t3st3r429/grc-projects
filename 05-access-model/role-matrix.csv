@@ -1,0 +1,10 @@
+role,description,risk_register,issues,exception_workflow,reports_dashboards,platform_configuration,user_management,api_access,data_scope
+GRC Platform Admin,Maintains configuration and access; does not approve risks,View,View,View,Edit,Admin,Admin,Admin,All records
+Risk Analyst,Assesses risks and manages exceptions,Edit,Edit,Edit,Create,None,None,None,All records
+Risk Owner (business),Owns specific risks and responds to requests,Edit own,Edit own,Create,View,None,None,None,Own records
+Control Owner,Provides control evidence and fixes issues,View own,Edit own,None,View,None,None,None,Own controls and issues
+Exception Approver (CISO / Director),Approves or rejects exceptions,View,View,Approve,View,None,None,None,Own business area
+Internal Audit,Independent read access for assurance,View,View,View,View,None,None,None,All records (read only)
+Executive Viewer,Leadership reporting,None,None,None,View,None,None,None,Dashboards only
+Reporting Integration (service),Sends GRC data to the reporting platform,View,View,View,None,None,None,Read-only token,Approved fields only; no personal data
+AI Assistant Integration (service),Helps summarize and draft; cannot approve or close,View,View,View,None,None,None,Read-only token,Approved record types; no personal data

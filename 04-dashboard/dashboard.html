@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyber Risk Dashboard (fictional data)</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14202e;--mute:#5b6573;--line:#ddd8cc}
+@media (prefers-color-scheme:dark){:root{--bg:#101826;--card:#182235;--ink:#eceff4;--mute:#9aa6b6;--line:#2b3850}}
+*{box-sizing:border-box}body{margin:0;padding:32px;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+h1{margin:0 0 4px;font-size:28px}.sub{color:var(--mute);margin:0 0 24px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:24px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi .n{font-size:38px;font-weight:700}.kpi .t{color:var(--mute);font-size:14px}
+.kpi.bad .n{color:#c0392b}.kpi.warn .n{color:#d68910}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin-bottom:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h2{margin:0 0 14px;font-size:17px}
+.row{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:14px}
+.lab{width:150px;flex:none}.track{flex:1;background:var(--line);border-radius:6px;height:14px;overflow:hidden}
+.fill{display:block;height:100%;border-radius:6px}.val{width:28px;text-align:right;font-weight:700}
+.wide{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+.foot{color:var(--mute);font-size:13px;margin-top:20px}
+</style></head><body>
+<h1>Cyber Risk Dashboard</h1>
+<p class="sub">Northwind Payments (fictional) &middot; as of 2026-11-17 &middot; built from the register, issues and exceptions in this repo</p>
+<div class="kpis"><div class="kpi "><div class="n">41</div><div class="t">Open risks</div></div><div class="kpi warn"><div class="n">6</div><div class="t">High risks</div></div><div class="kpi "><div class="n">21</div><div class="t">Open issues</div></div><div class="kpi bad"><div class="n">5</div><div class="t">Overdue issues</div></div><div class="kpi bad"><div class="n">5</div><div class="t">Exceptions expired or due in 30 days</div></div><div class="kpi warn"><div class="n">5</div><div class="t">Controls not yet verified</div></div></div>
+<div class="grid">
+<div class="card"><h2>Open risks by rating</h2><div class="row"><span class="lab">High</span><span class="track"><span class="fill" style="width:19%;background:#c0392b"></span></span><span class="val">6</span></div>
+<div class="row"><span class="lab">Medium</span><span class="track"><span class="fill" style="width:100%;background:#d68910"></span></span><span class="val">32</span></div>
+<div class="row"><span class="lab">Low</span><span class="track"><span class="fill" style="width:9%;background:#2e8b57"></span></span><span class="val">3</span></div></div>
+<div class="card"><h2>Issues by status</h2><div class="row"><span class="lab">Open</span><span class="track"><span class="fill" style="width:100%;background:#2f5d8a"></span></span><span class="val">14</span></div>
+<div class="row"><span class="lab">In Progress</span><span class="track"><span class="fill" style="width:50%;background:#d68910"></span></span><span class="val">7</span></div>
+<div class="row"><span class="lab">Closed</span><span class="track"><span class="fill" style="width:29%;background:#2e8b57"></span></span><span class="val">4</span></div></div>
+<div class="card"><h2>Exceptions by expiry</h2><div class="row"><span class="lab">Expired</span><span class="track"><span class="fill" style="width:25%;background:#c0392b"></span></span><span class="val">1</span></div>
+<div class="row"><span class="lab">Due in 30 days</span><span class="track"><span class="fill" style="width:100%;background:#d35400"></span></span><span class="val">4</span></div>
+<div class="row"><span class="lab">Due in 60 days</span><span class="track"><span class="fill" style="width:50%;background:#d68910"></span></span><span class="val">2</span></div>
+<div class="row"><span class="lab">Due in 90 days</span><span class="track"><span class="fill" style="width:25%;background:#b7950b"></span></span><span class="val">1</span></div>
+<div class="row"><span class="lab">On track</span><span class="track"><span class="fill" style="width:75%;background:#2e8b57"></span></span><span class="val">3</span></div>
+<div class="row"><span class="lab">In progress</span><span class="track"><span class="fill" style="width:50%;background:#7f8c8d"></span></span><span class="val">2</span></div></div>
+<div class="card"><h2>Open risks by category</h2><div class="row"><span class="lab">Identity &amp; Access</span><span class="track"><span class="fill" style="width:100%;background:#2f5d8a"></span></span><span class="val">6</span></div>
+<div class="row"><span class="lab">Application Security</span><span class="track"><span class="fill" style="width:67%;background:#2f5d8a"></span></span><span class="val">4</span></div>
+<div class="row"><span class="lab">Data Protection</span><span class="track"><span class="fill" style="width:67%;background:#2f5d8a"></span></span><span class="val">4</span></div>
+<div class="row"><span class="lab">Logging &amp; Monitoring</span><span class="track"><span class="fill" style="width:67%;background:#2f5d8a"></span></span><span class="val">4</span></div>
+<div class="row"><span class="lab">Vulnerability Management</span><span class="track"><span class="fill" style="width:50%;background:#2f5d8a"></span></span><span class="val">3</span></div>
+<div class="row"><span class="lab">Endpoint</span><span class="track"><span class="fill" style="width:50%;background:#2f5d8a"></span></span><span class="val">3</span></div>
+<div class="row"><span class="lab">Cloud Security</span><span class="track"><span class="fill" style="width:50%;background:#2f5d8a"></span></span><span class="val">3</span></div>
+<div class="row"><span class="lab">Third-Party Risk</span><span class="track"><span class="fill" style="width:50%;background:#2f5d8a"></span></span><span class="val">3</span></div>
+<div class="row"><span class="lab">Resilience</span><span class="track"><span class="fill" style="width:50%;background:#2f5d8a"></span></span><span class="val">3</span></div>
+<div class="row"><span class="lab">Awareness</span><span class="track"><span class="fill" style="width:33%;background:#2f5d8a"></span></span><span class="val">2</span></div>
+<div class="row"><span class="lab">Network Security</span><span class="track"><span class="fill" style="width:33%;background:#2f5d8a"></span></span><span class="val">2</span></div>
+<div class="row"><span class="lab">Governance</span><span class="track"><span class="fill" style="width:33%;background:#2f5d8a"></span></span><span class="val">2</span></div>
+<div class="row"><span class="lab">Cryptography</span><span class="track"><span class="fill" style="width:17%;background:#2f5d8a"></span></span><span class="val">1</span></div>
+<div class="row"><span class="lab">Incident Response</span><span class="track"><span class="fill" style="width:17%;background:#2f5d8a"></span></span><span class="val">1</span></div></div>
+</div>
+<div class="card wide"><h2>Overdue issues (5)</h2>
+<table><tr><th>ID</th><th>Issue</th><th>Owner</th><th>Severity</th><th>Days late</th></tr><tr><td>ISS-011</td><td>Run access recertification for finance systems</td><td>Finance Systems Owner</td><td>High</td><td>60</td></tr><tr><td>ISS-005</td><td>Migrate reporting server to a supported OS</td><td>Head of Infrastructure</td><td>High</td><td>45</td></tr><tr><td>ISS-001</td><td>Enable MFA on legacy admin console</td><td>IAM Lead</td><td>High</td><td>30</td></tr><tr><td>ISS-009</td><td>Complete overdue supplier security reviews</td><td>Vendor Risk Manager</td><td>Medium</td><td>10</td></tr><tr><td>ISS-015</td><td>Enable session recording for vendor access</td><td>Vendor Risk Manager</td><td>High</td><td>5</td></tr></table></div>
+<p class="foot">All data is fictional. Risk rating = likelihood x impact (High 15+, Medium 8-14, Low 1-7). Regenerate with build_dashboard.py.</p>
+</body></html>
