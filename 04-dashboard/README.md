@@ -11,3 +11,6 @@
 **Why one source of truth matters:** the dashboard has no numbers of its own. Fix a record in the register and the dashboard changes on the next run. That is the same reason GRC platforms exist.
 
 **What I'd improve next:** trend lines (this month versus last month) and a section for control test results.
+
+<img width="1792" height="967" alt="image" src="https://github.com/user-attachments/assets/0dc1a52c-8cce-42ea-a84e-56aa154d5b28" />
+
